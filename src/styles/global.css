@@ -1,0 +1,98 @@
+/*
+Estas clase de CSS son las clases globales que se aplicaran sobre todos los fichero de HTML.
+
+Las clases contenidas en este fichero actuan unicamente sobre las eticas <header/> y <footer/>
+sobre todos los ficheros HTML ya que estos ficheros comparten la misma cabecera y pie de pagina.
+
+Por otro lado las clases que se encargan de dar el estilo a la seccion donde reside la opcion de 
+subcripcion, solo actuaran sobre los ficheros que contenga la etiqueta en cuestion. Para que las 
+clases de CSS puedan seguir residiendo en este fichero deberan ser dos ficheros HTML o mas sobre 
+los que se apliquen dichas clases.
+
+Por ultimo tenemos los estilos existentes en las etiquetas que contienen los "Recent Projects" y 
+los "Other Projects", los cuales aunque se encuentren en ficheros diferentes, tambien comparten 
+similitudes en sus estilos.
+
+Al igual que estos casos concretos, existen un conjunto de elementos, los cuales compartes semejanzas
+entre ellos (aunque sean de ficheros HTML diferentes), estos compartiran estilos de CSS desde este 
+fichero.
+*/
+
+/* Aplicacion la tipografica de letra para todo el body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F4FC;
+}
+
+/* Aplicacion del estilo requerido sobre la etiqueta <header/> */
+header {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+/* Aplicacion de los estilos requeridos sobre la etiqueta <nav/> y las subetiquetas contenidas en ella */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 60px;
+}
+
+.contact {
+    background-color: #072AC8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    color: #6b708d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aplicacion de los estilos requeridos sobre la etiqueta <footer/> y las sub etiquetas que contenga */
+footer {
+    color: #6b708d;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-links p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #6b708d;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
