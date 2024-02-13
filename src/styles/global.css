@@ -69,30 +69,28 @@ nav {
 footer {
     color: #6b708d;
     padding: 5% 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 1em;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
-.footer-links p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+.footer-container p {
+    margin-top: 15%;
 }
 
 .footer-links a {
     color: #6b708d;
     text-decoration: none;
     font-weight: normal;
+    padding: 90px;
+}
+
+.footer-space {
+    margin-top: 50px;
 }
 
 
