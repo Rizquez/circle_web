@@ -1,0 +1,39 @@
+/*
+Los estilos de CSS contenidos en este fichero son de aplicacion unica sobre el 
+fichero HTML home_page.html.
+
+Estas clase actuaran unicamente sobre las etiquetas que no se encuentra ya bajo
+las diferentes clases globlales.
+
+Para mas informacion, visualice el fichero -> src/styles/global.css.
+*/
+
+/* Property sobre los colores */
+:root {
+    --color-a: #072AC8;
+    --color-b: #43D2FF;
+    --color-c: #A2D6F9;
+    --color-d: #D1EDFF;
+    --color-f: #292E47;
+    --color-g: #6B708D;
+    --color-h: #F2F4FC;
+    --color-i: #ECF7FF;
+    --color-j: #FFC600;
+}
+
+/* Clases para dar formato a los diferentes logos de las empresas */
+.logos {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos svg path {
+    fill: #656565;
+}
+
+/**/
