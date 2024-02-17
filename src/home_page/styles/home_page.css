@@ -8,19 +8,6 @@ las diferentes clases globlales.
 Para mas informacion, visualice el fichero -> src/styles/global.css.
 */
 
-/* Property sobre los colores */
-:root {
-    --color-a: #072AC8;
-    --color-b: #43D2FF;
-    --color-c: #A2D6F9;
-    --color-d: #D1EDFF;
-    --color-f: #292E47;
-    --color-g: #6B708D;
-    --color-h: #F2F4FC;
-    --color-i: #ECF7FF;
-    --color-j: #FFC600;
-}
-
 /* Clases para dar formato a los diferentes logos de las empresas */
 .logos {
     margin-top: 200px;
@@ -52,7 +39,6 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .comment-section h3 {

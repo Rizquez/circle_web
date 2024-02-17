@@ -5,6 +5,10 @@ fichero HTML contact_us.html.
 Estas clase actuaran unicamente sobre las etiquetas que no se encuentra ya bajo
 las diferentes clases globlales.
 
+En en caso del fichero HTML contact_us.html al contener una sola seccion, todas 
+las clases CSS de este fichero actuaran unicamente sobre esa etiqueta <section/>
+asi como en subetiquetas.
+
 Para mas informacion, visualice el fichero -> src/styles/global.css.
 */
 
