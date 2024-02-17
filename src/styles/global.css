@@ -1,0 +1,230 @@
+/*
+Estas clase de CSS son las clases globales que se aplicaran sobre todos los fichero de HTML.
+
+Las clases contenidas en este fichero actuan unicamente sobre las eticas <header/> y <footer/>
+sobre todos los ficheros HTML ya que estos ficheros comparten la misma cabecera y pie de pagina.
+
+Por otro lado las clases que se encargan de dar el estilo a la seccion donde reside la opcion de 
+subcripcion, solo actuaran sobre los ficheros que contenga la etiqueta en cuestion. Para que las 
+clases de CSS puedan seguir residiendo en este fichero deberan ser dos ficheros HTML o mas sobre 
+los que se apliquen dichas clases.
+
+Por ultimo tenemos los estilos existentes en las etiquetas que contienen los "Recent Projects" y 
+los "Other Projects", los cuales aunque se encuentren en ficheros diferentes, tambien comparten 
+similitudes en sus estilos.
+
+Al igual que estos casos concretos, existen un conjunto de elementos, los cuales compartes semejanzas
+entre ellos (aunque sean de ficheros HTML diferentes), estos compartiran estilos de CSS desde este 
+fichero.
+*/
+
+/* Property sobre los colores */
+:root {
+    --color-a: #072AC8;
+    --color-b: #43D2FF;
+    --color-c: #A2D6F9;
+    --color-d: #D1EDFF;
+    --color-f: #292E47;
+    --color-g: #6B708D;
+    --color-h: #F2F4FC;
+    --color-i: #ECF7FF;
+    --color-j: #FFC600;
+}
+
+/* Clases generales sobre los estilos de los textos */
+.txt-h1-bold {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.txt-h2-bold {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.txt-h3-bold {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txt-h4-bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.txt-bm {
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.txt-br {
+    font-size: 20px;
+}
+
+.txt-hlr {
+    font-size: 17px;
+}
+
+.txt-hlm {
+    font-size: 17px;
+    font-weight: medium;
+}
+
+.txt-cap1 {
+    font-size: 15px;
+}
+
+.txt-cap2 {
+    font-size: 13px;
+}
+
+/* Clase la tipografica de letra para todo el body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-h);
+}
+
+/* Clases del estilo general requerido sobre las etiquetas <header/> y <footer/> */
+.header-foot {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clases con los estilos requeridos sobre la etiqueta <nav/> y las subetiquetas contenidas en ella */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 60px;
+}
+
+.nav-links .btn1 {
+    color: var(--color-a);
+    text-decoration: none;
+}
+
+.nav-links .btn2-3 {
+    color: var(--color-g);
+    text-decoration: none;
+}
+
+/* Clase para el estilo sobre el bonton de contacto que se encuentra en la etiqueta <header/>*/
+.contact {
+    background-color: var(--color-a);
+    color: var(--color-i);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Clases con los estilos requeridos sobre los cajones con la informacion de los proyectos */
+.products-services {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-global {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-global div {
+    background-color: white;
+}
+
+.container-global img {
+    width: 460px;
+    height: 360px;
+}
+
+.container-global p {
+    margin-left: 40px;
+    padding-bottom: 20px 20px;
+}
+
+.txt-color-p {
+    margin-bottom: 70px;
+    color: var(--color-g);
+}
+
+.container-global a {
+    text-decoration: none;
+    color: var(--color-a);
+}
+
+/* Clases con los estilos necesarios para el apartado de subcripcion */
+.subs {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: var(--color-j);
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subs div {
+    position: relative;
+}
+
+.subs input {
+    height: 80px;
+    width: 393px;
+}
+
+.subs button {
+    height: 85px;
+    width: 198px;
+    background-color: var(--color-a);
+    color: var(--color-i);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.subs svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#email-input {
+    padding-left: 50px;
+}
+
+/* Clases con los estilos requeridos sobre la etiqueta <footer/> y las sub etiquetas que contenga */
+.header-foot p {
+    color: var(--color-g);
+}
+
+.foot-links-container {
+    display: flex;
+}
+
+.foot-links-container .foot-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.foot-links li {
+    padding-inline: 100px;
+    padding-block: 30px;
+}
+
+.foot-links a {
+    color: var(--color-g);
+    text-decoration: none;
+}
