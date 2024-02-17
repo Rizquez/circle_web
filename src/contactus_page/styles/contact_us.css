@@ -10,38 +10,43 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
 
 /* Conjunto de clases aplicados sobre todo el fichero HTML */
 .container-section {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .txt-up-box {
     margin-top: 40px;
+    color: var(--color-g);
     display: flex;
     flex-direction: column;
 }
 
 .box-nep {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 50px;
+    background-color: rgb(107, 112, 141, 0.1);
+    border: none;
+    margin-top: 16px;
 }
 
 .email-phone {
     display: flex;
     justify-content: space-between;
-
 }
 
 .email-phone div {
-    width: calc(50% - 30px);
-}
-
-.container-section label {
-    color: var(--color-g);
+    width: calc(50% - 20px);
 }
 
 .container-section textarea {
     resize: none;
     height: 200px;
+    background-color: rgb(107, 112, 141, 0.1);
+    border: none;
+    margin-top: 16px;
 }
 
 .btn-submit {
@@ -50,4 +55,13 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     height: 80px;
     color: #FFFFFF;
     background-color: var(--color-a);
+    border: none;
+}
+
+.space-txt-box {
+    padding-left: 30px;
+}
+
+.space-textarea {
+    padding-top: 20px;
 }
