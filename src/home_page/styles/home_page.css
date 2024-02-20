@@ -11,7 +11,7 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
 /* Clases para dar formato a los diferentes logos de las empresas */
 .logos {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1100px;
     margin: auto;
     margin-top: 200px;
     display: flex;
@@ -26,8 +26,8 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
 /* Clases de la etiqueta <section/> que contiene la informacion sobre los comentarios de los clientes */
 .comment-section {
     background-color: var(--color-f);
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 115%;
+    max-width: calc(1100px + 15%);
     height: 722px;
     background-image: url('../../resources/testimonial-section/orbit.png');
     background-position: center;
@@ -97,48 +97,25 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
 /* Clases que actuan sobre la etiqueta <section/> que contiene la primera parte de la web
 despues de la etiqueta <header/> */
 .container-hero {
-    margin-left: 12%;
-    margin-right: 12%;
+    width: 100%;
+    max-width: 1100px;
+    height: 650px;
+    margin: 0;
     display: flex;
-    align-items: center;
-    position: relative;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 120px
 }
 
-.container-hero > div:last-child {
-    position: relative;
-    flex-shrink: 0;
-}
-
-.container-hero > div:last-child img[alt="Hero"] {
-    width: calc(100% - 150px);
-    max-width: 720px;
-    height: auto;
+.container-hero > div img[alt="Hero"] {
+    width: 100%;
     display: block;
     position: relative;
     z-index: 1;
 }
 
-.container-hero > div:last-child img[alt="Credit Card"] {
-    width: calc(100% - 300px);
-    max-width: 350px;
-    height: auto;
-    position: absolute;
-    transform: translate(-25%, -175%);
-    z-index: 2;
-}
-
-.container-hero > div:last-child img[alt="Emoji"] {
-    width: calc(100% - 400px);
-    max-width: 350px;
-    height: auto;
-    position: absolute;
-    transform: translate(95%, -65%);
-    z-index: 3;
-}
-
-.hero-div-txt {
-    margin-top: 100px;
+.container-hero > * {
+    width: 50%;
 }
 
 .hero-txt {

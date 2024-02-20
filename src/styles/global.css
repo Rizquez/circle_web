@@ -82,21 +82,48 @@ fichero.
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color-h);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Clase contenedor requerido sobre las etiquetas <header/> y <footer/> */
-.head-foot {
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--color-h);
+}
+
+header > div {
     width: 100%;
-    max-width: 1440px;
-    margin: auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    height: 100%;
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.head-foot p {
+footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
     color: var(--color-g);
 }
 
@@ -152,8 +179,8 @@ body {
 
 /* Clases con los estilos necesarios para el apartado de subcripcion */
 .subs {
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 115%;
+    max-width: calc(1100px + 15%);
     height: 500px;
     background-color: var(--color-j);
     display: flex;
@@ -193,11 +220,9 @@ body {
 }
 
 /* Clases con los estilos requeridos sobre los cajones con la informacion de los proyectos */
-
 .products-services {
     width: 100%;
-    max-width: 1440px;
-    margin: auto;
+    max-width: 1100px;
     margin-bottom: 200px;
     margin-top: 200px;
 }
@@ -217,13 +242,14 @@ body {
 
 .container-global img {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 200px);
     max-width: 480px;
     max-height: 380px;
 }
 
 .container-global p {
     margin-left: 30px;
+    margin-right: 15px;
 }
 
 .container-global a {
