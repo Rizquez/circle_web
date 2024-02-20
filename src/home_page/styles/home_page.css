@@ -100,7 +100,41 @@ despues de la etiqueta <header/> */
     margin-left: 12%;
     margin-right: 12%;
     display: flex;
+    align-items: center;
+    position: relative;
     justify-content: space-between;
+}
+
+.container-hero > div:last-child {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.container-hero > div:last-child img[alt="Hero"] {
+    width: calc(100% - 150px);
+    max-width: 720px;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.container-hero > div:last-child img[alt="Credit Card"] {
+    width: calc(100% - 300px);
+    max-width: 350px;
+    height: auto;
+    position: absolute;
+    transform: translate(-25%, -175%);
+    z-index: 2;
+}
+
+.container-hero > div:last-child img[alt="Emoji"] {
+    width: calc(100% - 400px);
+    max-width: 350px;
+    height: auto;
+    position: absolute;
+    transform: translate(95%, -65%);
+    z-index: 3;
 }
 
 .hero-div-txt {
@@ -121,23 +155,4 @@ despues de la etiqueta <header/> */
 
 .hero-links li {
     margin-top: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container-hero img {
-    width: 600px;
 }
