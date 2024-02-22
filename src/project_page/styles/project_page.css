@@ -1,0 +1,19 @@
+/*
+Los estilos de CSS contenidos en este fichero son de aplicacion unica sobre el 
+fichero HTML project_page.html.
+
+Estas clase actuaran unicamente sobre las etiquetas que no se encuentra ya bajo
+las diferentes clases globlales.
+
+Para mas informacion, visualice el fichero -> src/styles/global.css.
+*/
+
+.info-project {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 120px;
+}
+
+.info-project img{
+    width: 100px;
+}
