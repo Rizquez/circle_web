@@ -17,8 +17,8 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .txt-up-box {

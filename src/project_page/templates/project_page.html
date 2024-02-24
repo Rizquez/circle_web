@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Circle</title>
         <link rel="stylesheet" type="text/css" href="../../styles/global.css"/>
-        <link rel="stylesheet" type="text/css" href="../styles/contact_us.css"/>
+        <link rel="stylesheet" type="text/css" href="../styles/project_page.css"/>
     </head>
     <body>
         <header>
@@ -28,28 +28,53 @@
                 <a href="../../contactus_page/templates/contact_us.html" class="contact">Contact US</a>
             </div>
         </header>
-        <section class="container-section">
-            <h1 class="txt-h1-bold">Contact Us</h1>
-            <form action="/submit-form" method="post">
-                <div class="txt-up-box">
-                    <label class="txt-br" for="full-name">Full Name *</label>
-                    <input class="box-nep space-txt-box" type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        <section class="info-project">
+            <h1 class="project-title txt-h1-bold"></h1>
+            <div>
+                <p class="project-description txt-bm"></p>
+                <p class="project-date txt-br">Completed on <span></span></p>
+            </div>
+            <div>
+                <img src="" alt="Img Project" class="project-image"/>
+                <img src="" alt="Img Project" class="project-image"/>
+            </div>
+            <p class="project-text txt-br"></p>
+        </section>
+        <section class="products-services" id="Recent_Projects">
+            <h3 class="txt-h3-bold">Other Projects</h3>
+            <div class="container-global">
+                <div class="bg-color-div">
+                    <img src="../../resources/projects-section/4.jpg" alt="Orbit">
+                    <p class="txt-bm">Orbit</p>
+                    <p class="txt-hlr txt-color-p">UI Design</p>
+                    <a href="../templates/project_page.html?project=Orbit">Learn more</a>
                 </div>
-                <div class="email-phone">
-                    <div class="txt-up-box">
-                        <label class="txt-br" for="email">Email</label>
-                        <input class="box-nep space-txt-box" type="email" id="email" name="email" placeholder="Enter your email address">
-                    </div>
-                    <div class="txt-up-box">
-                        <label class="txt-br" for="phone">Phone</label>
-                        <input class="box-nep space-txt-box" type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                    </div>
+                <div>
+                    <img src="../../resources/projects-section/5.jpg" alt="Purify">
+                    <p class="txt-bm">Purify</p>
+                    <p class="txt-hlr txt-color-p">UI/UX Design</p>
+                    <a href="../templates/project_page.html?project=Purify">Learn more</a>
                 </div>
-                <div class="txt-up-box">
-                    <label class="txt-br" for="message">Message</label>
-                    <textarea class="space-txt-box space-textarea" id="message" name="message" placeholder="Write your message here ..."></textarea>
+                <div>
+                    <img src="../../resources/projects-section/6.jpg" alt="CryptoPie">
+                    <p class="txt-bm">CryptoPie</p>
+                    <p class="txt-hlr txt-color-p">App Development</p>
+                    <a href="../templates/project_page.html?project=CryptoPie">Learn more</a>
                 </div>
-                <input class="btn-submit txt-hlm" type="submit" value="Submit">
+            </div>
+        </section>
+        <section class="subs">
+            <h3 class="txt-h3-bold">Do you have any questions?</h3>
+            <p class="txt-hlr">Let us help you!</p>
+            <form>
+                <div>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25Z" stroke="#292E47" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25 5H5C3.625 5 2.5 6.125 2.5 7.5L15 16.25L27.5 7.5C27.5 6.125 26.375 5 25 5Z" stroke="#292E47" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>
+                    <input type="email" id="email-input" placeholder="Enter your email">
+                    <button type="submit" class="txt-hlm">Subscribe</button>
+                </div>
             </form>
         </section>
         <footer>
@@ -81,5 +106,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="../../scripts/utils.js" type="module"></script>
     </body>
 </html>
