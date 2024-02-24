@@ -12,8 +12,52 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     width: 100%;
     max-width: 1100px;
     margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.info-project img{
-    width: 100px;
+.info-project span {
+    color: var(--color-g);
+}
+
+.info-project div:last-of-type {
+    height: 444px;
+}
+
+.info-project div:first-of-type {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 444px;
+}
+
+.project-image:first-of-type {
+    filter: blur(12px);
+}
+
+.project-image:last-of-type {
+    position: relative;
+    top: -444px;
+}
+
+.project-text {
+    margin-top: 60px;
+    line-height: 1.5em;
+}
+
+.project-description, .project-text {
+    color: var(--color-g);
+    text-align: justify;
 }

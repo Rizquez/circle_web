@@ -13,7 +13,8 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +30,8 @@ Para mas informacion, visualice el fichero -> src/styles/global.css.
     width: 115%;
     max-width: calc(1100px + 15%);
     height: 722px;
+    margin-top: 80px;
+    margin-bottom: 50px;
     background-image: url('../../resources/testimonial-section/orbit.png');
     background-position: center;
     background-repeat: no-repeat;
