@@ -1,0 +1,138 @@
+/*
+Los estilos de CSS contenidos en este fichero son de aplicacion unica sobre el 
+fichero HTML home_page.html.
+
+Estas clase actuaran unicamente sobre las etiquetas que no se encuentra ya bajo
+las diferentes clases globlales.
+
+Para mas informacion, visualice el fichero -> src/styles/global.css.
+*/
+
+/* Clases para dar formato a los diferentes logos de las empresas */
+.logos {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos svg path {
+    fill: #656565;
+}
+
+/* Clases de la etiqueta <section/> que contiene la informacion sobre los comentarios de los clientes */
+.comment-section {
+    background-color: var(--color-f);
+    width: 115%;
+    max-width: calc(1100px + 15%);
+    height: 722px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url('../../resources/testimonial-section/orbit.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.comment-section h3 {
+    text-align: center;
+    color: white;
+}
+
+.comment-client {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    color: var(--color-j);
+    text-align: center;
+}
+
+.name-client {
+    color: var(--color-c);
+}
+
+.page-client {
+    color: white;
+}
+
+.container-client {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-client {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.img-emojis {
+    width: 200px;
+    height: 200px;
+    padding: 120px;
+}
+
+.div-img-emojis {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Clases que actuan sobre la etiqueta <section/> que contiene el apartado "Our Services" */
+.container-global svg {
+    background-color: var(--color-i);
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+/* Clases que actuan sobre la etiqueta <section/> que contiene la primera parte de la web
+despues de la etiqueta <header/> */
+.container-hero {
+    width: 100%;
+    max-width: 1100px;
+    height: 650px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px
+}
+
+.container-hero > div img[alt="Hero"] {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.container-hero > * {
+    width: 50%;
+}
+
+.hero-txt {
+    color: var(--color-g);
+}
+
+.hero-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 0;
+}
+
+.hero-links li {
+    margin-top: 40px;
+}

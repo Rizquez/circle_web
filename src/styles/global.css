@@ -1,0 +1,287 @@
+/*
+Estas clase de CSS son las clases globales que se aplicaran sobre todos los fichero de HTML.
+
+Las clases contenidas en este fichero actuan unicamente sobre las eticas <header/> y <footer/>
+sobre todos los ficheros HTML ya que estos ficheros comparten la misma cabecera y pie de pagina.
+
+Por otro lado las clases que se encargan de dar el estilo a la seccion donde reside la opcion de 
+subcripcion, solo actuaran sobre los ficheros que contenga la etiqueta en cuestion. Para que las 
+clases de CSS puedan seguir residiendo en este fichero deberan ser dos ficheros HTML o mas sobre 
+los que se apliquen dichas clases.
+
+Por ultimo tenemos los estilos existentes en las etiquetas que contienen los "Recent Projects" y 
+los "Other Projects", los cuales aunque se encuentren en ficheros diferentes, tambien comparten 
+similitudes en sus estilos.
+
+Al igual que estos casos concretos, existen un conjunto de elementos, los cuales compartes semejanzas
+entre ellos (aunque sean de ficheros HTML diferentes), estos compartiran estilos de CSS desde este 
+fichero.
+*/
+
+/* Property sobre los colores */
+:root {
+    --color-a: #072AC8;
+    --color-b: #43D2FF;
+    --color-c: #A2D6F9;
+    --color-d: #D1EDFF;
+    --color-f: #292E47;
+    --color-g: #6B708D;
+    --color-h: #F2F4FC;
+    --color-i: #ECF7FF;
+    --color-j: #FFC600;
+}
+
+/* Clases generales sobre los estilos de los textos */
+.txt-h1-bold {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.txt-h2-bold {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.txt-h3-bold {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txt-h4-bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.txt-bm {
+    font-size: 24px;
+    font-weight: medium;
+}
+
+.txt-br {
+    font-size: 20px;
+}
+
+.txt-hlr {
+    font-size: 17px;
+}
+
+.txt-hlm {
+    font-size: 17px;
+    font-weight: medium;
+}
+
+.txt-cap1 {
+    font-size: 15px;
+}
+
+.txt-cap2 {
+    font-size: 13px;
+}
+
+/* Clase la tipografica de letra para todo el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-h);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Clase contenedor requerido sobre las etiquetas <header/> y <footer/> */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--color-h);
+}
+
+header > div {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: var(--color-g);
+}
+
+/* Clases con los estilos requeridos sobre la etiqueta <nav/> y las subetiquetas contenidas en ella */
+.nav-links {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    padding: calc(100% - 110px);
+}
+
+.nav-links .btn1 {
+    color: var(--color-a);
+    text-decoration: none;
+}
+
+.nav-links .btn2-3 {
+    color: var(--color-g);
+    text-decoration: none;
+}
+
+/* Clase para el estilo sobre el bonton de contacto que se encuentra en la etiqueta <header/>*/
+.contact {
+    background-color: var(--color-a);
+    color: var(--color-i);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Clases con los estilos requeridos sobre la etiqueta <footer/> y las sub etiquetas que contenga */
+.foot-links-container {
+    display: flex;
+}
+
+.foot-links-container .foot-links {
+    list-style: none;
+    flex-direction: column;
+}
+
+.foot-links li {
+    padding: 30px;
+}
+
+.foot-links a {
+    color: var(--color-g);
+    text-decoration: none;
+}
+
+/* Clases con los estilos necesarios para el apartado de subcripcion */
+.subs {
+    width: 115%;
+    max-width: calc(1100px + 15%);
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    background-color: var(--color-j);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subs div {
+    position: relative;
+}
+
+.subs input {
+    height: 80px;
+    width: 393px;
+}
+
+.subs button {
+    height: 85px;
+    width: 198px;
+    background-color: var(--color-a);
+    color: var(--color-i);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+}
+
+.subs svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#email-input {
+    padding-left: 50px;
+}
+
+/* Clases con los estilos requeridos sobre los cajones con la informacion de los proyectos */
+.products-services {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.container-global {
+    display: flex;
+    gap: 40px;
+}
+
+.container-global div {
+    background-color: #FFFFFF;
+    width: calc(100% - 50px);
+    max-width: 480px;
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container-global img {
+    width: 100%;
+    height: calc(100% - 200px);
+    max-width: 480px;
+    max-height: 380px;
+}
+
+.container-global p {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.container-global a {
+    text-decoration: none;
+    color: var(--color-a);
+    display: block; 
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.txt-color-p {
+    padding-bottom: 50px;
+    color: var(--color-g);
+}
+
+/* Clases para aplicar sobre las diferentes alertas que apararezcan al momento de 
+la subscripcion del envio del formulario de contacto */
+.hidden-alert {
+    display: none;
+}
+
+#customized-alert {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    padding: 20px;
+    border: 1px solid var(--color-g);
+    z-index: 1000;
+}

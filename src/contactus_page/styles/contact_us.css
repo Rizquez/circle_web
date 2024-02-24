@@ -1,0 +1,71 @@
+/*
+Los estilos de CSS contenidos en este fichero son de aplicacion unica sobre el 
+fichero HTML contact_us.html.
+
+Estas clase actuaran unicamente sobre las etiquetas que no se encuentra ya bajo
+las diferentes clases globlales.
+
+En en caso del fichero HTML contact_us.html al contener una sola seccion, todas 
+las clases CSS de este fichero actuaran unicamente sobre esa etiqueta <section/>
+asi como en subetiquetas.
+
+Para mas informacion, visualice el fichero -> src/styles/global.css.
+*/
+
+/* Conjunto de clases aplicados sobre todo el fichero HTML */
+.container-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.txt-up-box {
+    margin-top: 40px;
+    color: var(--color-g);
+    display: flex;
+    flex-direction: column;
+}
+
+.box-nep {
+    width: calc(100% - 30px);
+    height: 50px;
+    background-color: rgb(107, 112, 141, 0.1);
+    border: none;
+    margin-top: 16px;
+}
+
+.email-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-phone div {
+    width: calc(50% - 20px);
+}
+
+.container-section textarea {
+    resize: none;
+    height: 200px;
+    background-color: rgb(107, 112, 141, 0.1);
+    border: none;
+    margin-top: 16px;
+}
+
+.btn-submit {
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    color: #FFFFFF;
+    background-color: var(--color-a);
+    border: none;
+}
+
+.space-txt-box {
+    padding-left: 30px;
+}
+
+.space-textarea {
+    padding-top: 20px;
+}
