@@ -7,7 +7,7 @@ Este proyecto esta se desarrolla con la finalidad de poner en practica las habil
 El diseño esta basado en el fichero `.fig` que se encuentra al mismo nivel que el directorio raiz del proyecto.
 
 > [!IMPORTANT]
-Este proyecto es de caracter educativo y sirve para aplicar habilidades/conceptos relacionados al uso de aplicaciones WEB.
+Este proyecto es de caracter educativo y sirve para aplicar habilidades/conceptos relacionados al uso de aplicaciones web.
 
 > [!TIP]
 El fichero `.fig` puede ser visualizado utilizando herramientas como [Figma](https://www.figma.com/).
