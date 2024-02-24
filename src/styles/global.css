@@ -267,3 +267,21 @@ footer p {
     color: var(--color-g);
 }
 
+/* Clases para aplicar sobre las diferentes alertas que apararezcan al momento de 
+la subscripcion del envio del formulario de contacto */
+.hidden-alert {
+    display: none;
+}
+
+#customized-alert {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    padding: 20px;
+    border: 1px solid var(--color-g);
+    z-index: 1000;
+}
