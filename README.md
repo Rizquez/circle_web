@@ -1,25 +1,14 @@
 # Circle Web | HTML + CSS + JS
 ![img](circle.jpg)
 
-Este proyecto esta se desarrolla con la finalidad de poner en practica las habilidades adquiridas sobre desarrollo web integrando herramientas de HTML, CSS y JavaScript.
+## Introduccion
+__Circle Web__ es un proyecto de desarrollo web que integra HTML, CSS y JavaScript. Este proyecto es una plataforma para demostrar y mejorar las habilidades adquiridas en desarrollo web, utilizando técnicas modernas y buenas prácticas.
 
-> [!NOTE]
-El diseño esta basado en el fichero `.fig` que se encuentra al mismo nivel que el directorio raiz del proyecto.
+## Diseño
+El diseño de Circle Web se inspira en el archivo `.fig`, que está disponible en el mismo nivel que el directorio raíz del proyecto. Este diseño puede ser visualizado utilizando herramientas como __Figma__, lo que facilita la comprensión y colaboración en el diseño.
 
-> [!IMPORTANT]
-Este proyecto es de caracter educativo y sirve para aplicar habilidades/conceptos relacionados al uso de aplicaciones web.
-
-> [!TIP]
-El fichero `.fig` puede ser visualizado utilizando herramientas como [Figma](https://www.figma.com/).
-
-## Funcionalidad
-Este proyecto consta de tres partes las cuales se describen a continuacion:
-
-- La primera pagina es la principal, en esta se puede conocer un poco mas de la empresa asi como los patners, proyectos recientes y comentarios de los clientes. Tambien se encuentran otros servicios ofrecidos por la empresa, asi como un espacio en donde se podra ingresar un email para suscribirse al newsletter.
-
-- Para acceder a la segunda se debera dar clic en la opcion de `Learn more` en los proyectos del apartado `Recent Projects`, lo cual redijira al usuario a una pagina que se genera en base a la informacion relacionada al proyecto en cuestion. En esta pagina, ademas conseguira informacion sobre otros proyectos que han sido desarrollados por la empresa. Tambien se podra dar clic en `Learn more` para acceder a la informacion de cada proyecto. Aqui tambien encontrara la seccion para suscribirse.
-
-- La ultima pagina es la de contacto, en donde el usuario podra indicar sus datos de contacto, asi como redactar un mensaje y enviarlo junto con sus datos mediante el formulario de contacto.
+## Objetivo
+Este proyecto tiene un carácter educativo y está orientado a aplicar habilidades y conceptos clave en el desarrollo de aplicaciones web. Es un escenario ideal para experimentar con nuevas ideas y tecnologías en un entorno controlado.
 
 ## Estructura del proyecto
 ```
@@ -83,8 +72,23 @@ Este proyecto consta de tres partes las cuales se describen a continuacion:
         └── global.css
 ```
 
+## Funcionalidad
+
+### Pagina Principal
+La página principal ofrece una visión general de la empresa, destacando socios, proyectos recientes y testimonios de clientes. También incluye secciones sobre otros servicios y una opción para suscribirse al boletín informativo.
+
+### Pagina de Proyectos
+Al seleccionar "Learn More" en cualquier proyecto bajo "Recent Projects", los usuarios son redirigidos a una página detallada del proyecto. Esta sección proporciona información adicional y acceso a otros proyectos de la empresa.
+
+### Pagina de Contacto
+En la página de contacto, los usuarios pueden enviar sus datos y mensajes a través de un formulario de contacto, facilitando la comunicación directa con la empresa.
+
 ## Contribuciones
-Las contribuciones son bienvenidas. Si deseas contribuir al proyecto, por favor haz un `fork` del repositorio, crea una rama con tus mejoras y envía un `pull request`.
+Las contribuciones son esenciales para el crecimiento y mejora de Circle Web. Si estás interesado en contribuir, por favor:
+
+- Haz un fork del repositorio.
+- Crea una rama para tus mejoras.
+- Envía un pull request con tus cambios.
 
 ## Licencia
-Este proyecto está bajo una licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
